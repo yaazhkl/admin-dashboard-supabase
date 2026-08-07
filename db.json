@@ -1,0 +1,416 @@
+{
+  "admins": [
+    {
+      "id": 1,
+      "username": "haikal",
+      "password": "123456",
+      "name": "Haikal",
+      "email": "haikal@company.com",
+      "role": "Administrator"
+    },
+    {
+      "id": 2,
+      "username": "faridlil",
+      "password": "123456",
+      "name": "Faridlil",
+      "email": "faridlil@company.com",
+      "role": "Administrator"
+    }
+  ],
+  "departments": [
+    {
+      "name": "Information Technology",
+      "code": "IT",
+      "description": "Responsible to Make Software",
+      "id": 1
+    },
+    {
+      "id": 2,
+      "name": "Finance",
+      "code": "FIN",
+      "description": "Responsible for financial management."
+    },
+    {
+      "id": 3,
+      "name": "Human Resource",
+      "code": "HR",
+      "description": "Human Resource Division"
+    },
+    {
+      "name": "Marketing",
+      "code": "MKT",
+      "description": "Marketing Division",
+      "id": 4
+    }
+  ],
+  "positions": [
+    {
+      "departmentId": 1,
+      "name": "Frontend Developer",
+      "code": "FE001",
+      "id": 1
+    },
+    {
+      "id": 2,
+      "departmentId": 1,
+      "name": "Backend",
+      "code": "BE001"
+    },
+    {
+      "id": 3,
+      "departmentId": 1,
+      "name": "Network Administrator",
+      "code": "NA001"
+    },
+    {
+      "id": 4,
+      "departmentId": 1,
+      "name": "IT Manager",
+      "code": "ITM001"
+    },
+    {
+      "id": 5,
+      "departmentId": 2,
+      "name": "Accountant",
+      "code": "AC001"
+    },
+    {
+      "departmentId": 3,
+      "name": "HR Staff",
+      "code": "HRS001",
+      "id": 7
+    },
+    {
+      "departmentId": 3,
+      "name": "HR Manager",
+      "code": "HRM001",
+      "id": 8
+    },
+    {
+      "departmentId": 4,
+      "name": "Sales",
+      "code": "SA001",
+      "id": 9
+    },
+    {
+      "departmentId": 4,
+      "name": "Marketing Manager",
+      "code": " MM001",
+      "id": 10
+    },
+    {
+      "departmentId": 2,
+      "name": "Finance Manager",
+      "code": "FM001",
+      "id": 11
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "fullname": "Andi Pratama",
+      "email": "andi.pratama@company.com",
+      "departmentId": 1,
+      "positionId": 4,
+      "active": true
+    },
+    {
+      "id": 2,
+      "fullname": "Budi Santoso",
+      "email": "budi.santoso@company.com",
+      "departmentId": 1,
+      "positionId": 1,
+      "active": true
+    },
+    {
+      "id": 3,
+      "fullname": "Citra Lestari",
+      "email": "citra.lestari@company.com",
+      "departmentId": 1,
+      "positionId": 1,
+      "active": true
+    },
+    {
+      "id": 5,
+      "fullname": "Eka Ramadhan",
+      "email": "eka.ramadhan@company.com",
+      "departmentId": 1,
+      "positionId": 2,
+      "active": false
+    },
+    {
+      "id": 6,
+      "fullname": "Fajar Nugraha",
+      "email": "fajar.nugraha@company.com",
+      "departmentId": 1,
+      "positionId": 3,
+      "active": true
+    },
+    {
+      "id": 8,
+      "fullname": "Hendra Wijaya",
+      "email": "hendra.wijaya@company.com",
+      "departmentId": 2,
+      "positionId": 5,
+      "active": true
+    },
+    {
+      "id": 9,
+      "fullname": "Indah Permata",
+      "email": "indah.permata@company.com",
+      "departmentId": 2,
+      "positionId": 5,
+      "active": true
+    },
+    {
+      "fullname": "Rizky Gilang",
+      "email": "rizky.gilang@company.com",
+      "departmentId": 3,
+      "positionId": 7,
+      "active": true,
+      "id": 10
+    },
+    {
+      "fullname": "Sudarmono Agung",
+      "email": "sudarmono.agung@company.com",
+      "departmentId": 3,
+      "positionId": 8,
+      "active": true,
+      "id": 11
+    },
+    {
+      "fullname": "Zahra Luna",
+      "email": "zahra.luna@gmail.com",
+      "departmentId": 4,
+      "positionId": 10,
+      "active": true,
+      "id": 12
+    },
+    {
+      "fullname": "Sally Widya",
+      "email": "sally.widya@gmail.com",
+      "departmentId": 4,
+      "positionId": 9,
+      "active": true,
+      "id": 13
+    },
+    {
+      "fullname": "Fitri Komala",
+      "email": "fitri.komala@company.com",
+      "departmentId": 2,
+      "positionId": 11,
+      "active": true,
+      "id": 14
+    },
+    {
+      "fullname": "Billy Saputra",
+      "email": "billysaputra@company.com",
+      "departmentId": 4,
+      "positionId": 9,
+      "active": true,
+      "id": 15
+    }
+  ],
+  "activityLogs": [
+    {
+      "user": "haikal",
+      "action": "LOGIN",
+      "module": "AUTH",
+      "description": "Login as haikal",
+      "createdAt": "2026-08-05T03:40:11.281Z",
+      "id": 1
+    },
+    {
+      "user": "haikal",
+      "action": "POSITION ADD",
+      "module": "POSITIONS",
+      "description": "haikal Added New Position Finance Manager",
+      "createdAt": "2026-08-05T04:26:34.697Z",
+      "id": 2
+    },
+    {
+      "user": "haikal",
+      "action": "USER ADD",
+      "module": "USERS",
+      "description": "haikal Added New User Fitri Komala",
+      "createdAt": "2026-08-05T04:26:51.710Z",
+      "id": 3
+    },
+    {
+      "user": "faridlil",
+      "action": "LOGIN",
+      "module": "AUTH",
+      "description": "Login as faridlil",
+      "createdAt": "2026-08-05T04:30:47.236Z",
+      "id": 4
+    },
+    {
+      "user": "haikal",
+      "action": "LOGIN",
+      "module": "AUTH",
+      "description": "Login as haikal",
+      "createdAt": "2026-08-05T04:31:35.662Z",
+      "id": 5
+    },
+    {
+      "user": "faridlil",
+      "action": "LOGIN",
+      "module": "AUTH",
+      "description": "Login as faridlil",
+      "createdAt": "2026-08-05T04:35:08.305Z",
+      "id": 6
+    },
+    {
+      "user": "faridlil",
+      "action": "USER EDIT",
+      "module": "USERS",
+      "description": "faridlil Edited User Sally Widya",
+      "createdAt": "2026-08-05T06:18:27.793Z",
+      "id": 7
+    },
+    {
+      "user": "haikal",
+      "action": "LOGIN",
+      "module": "AUTH",
+      "description": "Login as haikal",
+      "createdAt": "2026-08-05T06:22:10.796Z",
+      "id": 8
+    },
+    {
+      "user": "haikal",
+      "action": "DEPARTMENT EDIT",
+      "module": "DEPARTMENTS",
+      "description": "haikal Edited Information Technology Department",
+      "createdAt": "2026-08-05T06:37:21.786Z",
+      "id": 9
+    },
+    {
+      "user": "haikal",
+      "action": "DEPARTMENT EDIT",
+      "module": "DEPARTMENTS",
+      "description": "haikal Edited Information Technology Department",
+      "createdAt": "2026-08-05T06:37:23.864Z",
+      "id": 10
+    },
+    {
+      "user": "haikal",
+      "action": "DEPARTMENT EDIT",
+      "module": "DEPARTMENTS",
+      "description": "haikal Edited Information Technology Department",
+      "createdAt": "2026-08-05T06:39:20.548Z",
+      "id": 11
+    },
+    {
+      "user": "haikal",
+      "action": "DEPARTMENT EDIT",
+      "module": "DEPARTMENTS",
+      "description": "haikal Edited Information Technology Department",
+      "createdAt": "2026-08-05T06:39:23.710Z",
+      "id": 12
+    },
+    {
+      "user": "haikal",
+      "action": "DEPARTMENT EDIT",
+      "module": "DEPARTMENTS",
+      "description": "haikal Edited Information Technology Department",
+      "createdAt": "2026-08-05T06:40:21.807Z",
+      "id": 13
+    },
+    {
+      "user": "faridlil",
+      "action": "LOGIN",
+      "module": "AUTH",
+      "description": "Login as faridlil",
+      "createdAt": "2026-08-06T02:07:15.092Z",
+      "id": 14
+    },
+    {
+      "user": "faridlil",
+      "action": "LOGIN",
+      "module": "AUTH",
+      "description": "Login as faridlil",
+      "createdAt": "2026-08-06T02:09:24.716Z",
+      "id": 15
+    },
+    {
+      "user": "haikal",
+      "action": "LOGIN",
+      "module": "AUTH",
+      "description": "Login as haikal",
+      "createdAt": "2026-08-06T02:44:32.311Z",
+      "id": 16
+    },
+    {
+      "user": "haikal",
+      "action": "LOGIN",
+      "module": "AUTH",
+      "description": "Login as haikal",
+      "createdAt": "2026-08-06T03:18:44.889Z",
+      "id": 17
+    },
+    {
+      "user": "haikal",
+      "action": "LOGIN",
+      "module": "AUTH",
+      "description": "Login as haikal",
+      "createdAt": "2026-08-06T03:30:05.485Z",
+      "id": 18
+    },
+    {
+      "user": "haikal",
+      "action": "LOGIN",
+      "module": "AUTH",
+      "description": "Login as haikal",
+      "createdAt": "2026-08-06T03:37:33.999Z",
+      "id": 19
+    },
+    {
+      "user": "faridlil",
+      "action": "LOGIN",
+      "module": "AUTH",
+      "description": "Login as faridlil",
+      "createdAt": "2026-08-06T03:38:06.300Z",
+      "id": 20
+    },
+    {
+      "user": "haikal",
+      "action": "LOGIN",
+      "module": "AUTH",
+      "description": "Login as haikal",
+      "createdAt": "2026-08-06T03:39:43.691Z",
+      "id": 21
+    },
+    {
+      "user": "haikal",
+      "action": "LOGIN",
+      "module": "AUTH",
+      "description": "Login as haikal",
+      "createdAt": "2026-08-06T03:42:07.704Z",
+      "id": 22
+    },
+    {
+      "user": "haikal",
+      "action": "LOGIN",
+      "module": "AUTH",
+      "description": "Login as haikal",
+      "createdAt": "2026-08-06T07:25:00.767Z",
+      "id": 23
+    },
+    {
+      "user": "haikal",
+      "action": "LOGIN",
+      "module": "AUTH",
+      "description": "Login as haikal",
+      "createdAt": "2026-08-06T07:35:38.284Z",
+      "id": 24
+    },
+    {
+      "user": "haikal",
+      "action": "USER ADD",
+      "module": "USERS",
+      "description": "haikal Added New User Billy Saputra",
+      "createdAt": "2026-08-06T07:36:30.857Z",
+      "id": 25
+    }
+  ]
+}

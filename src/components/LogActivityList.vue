@@ -5,7 +5,7 @@
     <div class="flex items-center justify-between mb-6">
         <div class="">
             <h1 class="text-2xl font-bold">Activity Log</h1>
-            <p class="text-gray-500 text-sm">All Activities Recorded Here</p>
+            <p class="text-gray-500 text-sm">Semua Aktivitas Tercatat Di sini</p>
         </div>
         <div class="">
         </div>
@@ -16,10 +16,10 @@
         <input
             type="text"
             placeholder="Search Position..."
-            class="border rounded-lg px-4 py-2 w-full md:w-80 outline-none focus:ring-2 focus:ring-blue-500"        v-model="searchActivity"
+            class="border rounded-lg px-4 h-10 w-full md:w-80 outline-none focus:ring-2 focus:ring-blue-500"        v-model="searchActivity"
         />
 
-        <div class="w-full md:w-auto flex flex-col sm:flex-row gap-3">
+        <div class="w-full md:w-auto flex flex-col lg:flex-row gap-3">
             <select
                 class="border rounded-lg px-4 py-2 outline-none focus:ring-2 focus:ring-blue-500" v-model="moduleFilter"
                 >
@@ -90,13 +90,6 @@
           :class="'px-5  py-2 border-2 rounded bg-sky-600 hover:bg-sky-900 text-white hover:text-white cursor-pointer' "
           @click="currentPage--"
           :disabled="currentPage === 1">Prev</button>
-        </div>
-        <div class="">
-          <button v-for="page of totalPages"
-          :class="[
-          'px-3 py-1 rounded',
-            currentPage === page ? 'bg-blue-900 text-white' : 'none'
-          ]">{{ page }}</button>
         </div>
         <div class="px-3 flex items-center">
           <button

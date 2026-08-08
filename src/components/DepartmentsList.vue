@@ -5,7 +5,7 @@
             <div class="">
                 <h1 class="text-2xl font-bold">Department</h1>
                 <p class="text-gray-500 text-sm">
-                Manage semua department yang terdaftar</p>
+                Manage Semua Department yang Terdaftar</p>
             </div>
             <div class="">
                 <DepartmentAdd/>

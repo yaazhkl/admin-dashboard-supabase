@@ -56,8 +56,6 @@
     const authStore = useAuthStore();
 
     const handleLogin = async()=>{
-        console.log(inputUsername.value);
-        console.log(inputPassword.value);
         const success = await authStore.login(
             inputUsername.value,
             inputPassword.value

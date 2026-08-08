@@ -3,7 +3,7 @@
     <div class="flex items-center justify-between mb-6">
         <div class="">
             <h1 class="text-2xl font-bold">Position</h1>
-            <p class="text-gray-500 text-sm">Manage semua posisi pekerjaan</p>
+            <p class="text-gray-500 text-sm">Manage Semua Posisi Pekerjaan</p>
         </div>
         <div class="">
             <PositionAdd />

@@ -11,9 +11,14 @@ defineProps<{
 }>()
 
 
-defineEmits<{
-  (e: 'toggle-sidebar'): void
-}>()
+  const emit = defineEmits<{
+    (e: 'toggle-sidebar'): void
+    (e: 'logout') : void
+  }>();
+
+  const logout = ()=>{
+    emit('logout')
+  }
 </script>
 
 <template>
@@ -33,9 +38,9 @@ defineEmits<{
     </div>
 
     <div class="flex items-center gap-4 cursor-pointer" @click="goToAccount">
-      <div class="flex items-center gap-2">
+      <div class="flex items-center gap-6">
         <div class="">
-          
+          <button class="bg-sky-900 px-4 cursor-pointer hover:bg-sky-600 py-1 rounded text-white transition-all duration-300 ease-in-out" @click="logout">Logout</button>
         </div>
         <div class="w-9 h-9 rounded-full bg-sky-900 text-white flex items-center justify-center font-semibold text-slate-900 text-sm">
           {{ userName.charAt(0).toUpperCase() }}

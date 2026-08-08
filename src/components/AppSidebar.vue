@@ -23,14 +23,10 @@
                     {{ item.label }}
                 </RouterLink>
             </nav>
-            <div class="p-4 border-t border-sky-800 shrink-0 flex items-center justify-center">
-                <Button variant="full" inner-text="Logout" bg="bg-sky-900" hover="hover:bg-sky-800" @click-button="logout"/>
-            </div>
         </aside>
 </template>
 <script setup lang="ts">
     import { RouterLink } from 'vue-router';
-    import Button from './Button.vue';
     import { useRoute } from 'vue-router';
     import type { Component } from 'vue'
     import {
@@ -63,9 +59,6 @@
   
     }>();
 
-const logout = () => {
-    emit('logout');
-};
 
 
     const menuItems : MenuItem[] = [

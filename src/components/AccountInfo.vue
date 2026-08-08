@@ -115,21 +115,21 @@
     }
     
 
-const lastLogin = computed(() => {
-    const userAdmin = currentUser.value?.username;
+    const lastLogin = computed(() => {
+        const userAdmin = currentUser.value?.username;
 
-    if (!userAdmin) return [];
+        if (!userAdmin) return [];
 
-    return activityLogList.value
-        .filter(log =>
-            log.user === userAdmin &&
-            log.action === "LOGIN"
-        )
-        .map(log => log.created_at)
-        .slice()
-        .reverse()
-        .slice(0,3);
-});
+        return activityLogList.value
+            .filter(log =>
+                log.user === userAdmin &&
+                log.action === "LOGIN"
+            )
+            .map(log => log.created_at)
+            .slice()
+            .reverse()
+            .slice(0,3);
+    });
 
     onMounted(async()=>{
         await useLog.activityLogCall();

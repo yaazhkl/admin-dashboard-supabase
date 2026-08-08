@@ -10,7 +10,6 @@ export const useLogActivityStore = defineStore('logActivity', ()=>{
         try{
             const response = await activityLogService.getActivityLogs();
             activityLogList.value = response;
-            console.table(activityLogList.value);
         }catch(err){
             console.error(err);
         }

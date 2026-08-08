@@ -59,7 +59,6 @@
     departmentCount.value = totalDepartment
     await useDepartment.departmentCall();
     await usePosition.positionCall();
-    console.log("isinya: ", departmentsWithPositionCount.value)
   });
 
 </script>

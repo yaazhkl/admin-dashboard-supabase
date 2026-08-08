@@ -57,6 +57,5 @@
     
     onMounted(async()=>{
         await useLog.activityLogCall();
-        console.log(recentActivity);
     })
 </script>

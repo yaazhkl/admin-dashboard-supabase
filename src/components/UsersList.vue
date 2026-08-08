@@ -206,7 +206,7 @@
       const numericId = typeof id === 'string' ? Number(id) : id;
       try{
         await deleteUser(numericId);
-        await userStore.userCall(); // refresh list
+        await userStore.userCall();
         const saveEditLog = {
             user : currentUser.value.username,
             action : "USER DELETE",
@@ -289,9 +289,7 @@
  
     onMounted(async()=>{
         await userStore.userCall();
-        console.log(userStore.userList);
         await departmentStore.departmentCall();
-        console.log(departmentStore.departmentList);
         await positionStore.positionCall();
         
     })

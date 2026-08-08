@@ -144,7 +144,6 @@
         }
         await updateUser(props.user.id, editUser);
         await activityLogService.saveLog(saveEditLog);
-        console.log("savelog berhasil");
         emit("save");
     }
 

@@ -9,7 +9,7 @@
             :class="isSidebarOpen ? 'md:pl-64' : 'md:pl-0'"
         >
       
-        <AppNavbar :user-name="currentUser.name" @toggle-sidebar="handleTogglebar" :isOpen="isSidebarOpen"/>
+        <AppNavbar :user-name="currentUser.name" @toggle-sidebar="handleTogglebar" @logout="handleLogout" :isOpen="isSidebarOpen"/>
       <main class="p-6 md:p-8">
         <h2 class="text-2xl font-bold text-slate-900">
           Selamat datang, {{ currentUser.name }} 👋

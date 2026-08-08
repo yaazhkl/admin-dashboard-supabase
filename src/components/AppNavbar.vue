@@ -34,6 +34,9 @@ defineEmits<{
 
     <div class="flex items-center gap-4 cursor-pointer" @click="goToAccount">
       <div class="flex items-center gap-2">
+        <div class="">
+          
+        </div>
         <div class="w-9 h-9 rounded-full bg-sky-900 text-white flex items-center justify-center font-semibold text-slate-900 text-sm">
           {{ userName.charAt(0).toUpperCase() }}
         </div>

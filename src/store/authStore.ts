@@ -14,7 +14,6 @@ export const useAuthStore = defineStore('auth', ()=>{
             username,
             password,
         });
-        console.log(users);
         if(users.length ===0){
             return false;
         }

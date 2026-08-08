@@ -21,8 +21,6 @@ export const authService = {
             return [];
         }
 
-        console.log("Login Result:", data);
-
         return data ?? [];
     }
 }
